@@ -93,7 +93,7 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
 
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -182,7 +182,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--bgc-color);
 
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
