@@ -28,6 +28,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
 /* CONTAINER */
 
 .container {
@@ -35,6 +45,8 @@ body {
   margin-right: auto;
 
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   outline: 2px solid rgb(4, 184, 37);
 }
@@ -49,19 +61,36 @@ body {
 
   text-decoration: none;
 }
+
 .logo-dark {
   color: var(--primary-text-color);
 }
 
 /* index.html */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   background-color: aqua;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+
+  outline: 1px solid greenyellow;
+}
+
+.site-nav .nav-item + .nav-item {
+  margin-left: 50px;
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -69,15 +98,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.list {
-  padding: 0;
-  margin: 0;
 
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -85,7 +106,20 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.feedback {
+  display: flex;
+  margin-left: auto;
+}
+
+.feedback-item + .feedback-item {
+  margin-left: 50px;
+}
+
 .feedback .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-color);
 
   font-weight: 500;
@@ -140,9 +174,26 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* works */
 .section-works {
   padding-top: 0;
   padding-bottom: 94px;
+}
+.image {
+  display: block;
+  width: 100%;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.works-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
 }
 
 .section-title {
@@ -175,6 +226,22 @@ body {
   padding-bottom: 94px;
 
   background-color: var(--bgc-color);
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - 30px);
+
+  margin-left: 30px;
+
+  background-color: coral;
 }
 
 .features-title {
