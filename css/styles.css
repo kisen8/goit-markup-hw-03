@@ -52,8 +52,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 2px solid rgb(4, 184, 37); */
 }
 
 .logo {
@@ -85,8 +83,6 @@ body {
 .site-nav {
   display: flex;
   margin-left: 93px;
-
-  /* outline: 1px solid greenyellow; */
 }
 
 .site-nav .nav-item + .nav-item {
@@ -143,8 +139,6 @@ body {
   padding-bottom: 200px;
   background-color: var(--bgc-hero-footer);
   text-align: center;
-
-  /* outline: 2px solid greenyellow; */
 }
 .hero-title {
   margin-top: 0;
@@ -159,8 +153,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .btn {
   display: inline-block;
+  border: none;
   border-radius: 4px;
 
   padding: 10px 32px;
@@ -170,6 +166,7 @@ body {
 .hero-button {
   color: var(--white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
@@ -186,7 +183,7 @@ body {
 }
 .image {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .works {
@@ -242,8 +239,6 @@ body {
   flex-basis: calc(100% / 4 - 30px);
 
   margin-left: 30px;
-
-  /* background-color: coral; */
 }
 
 .features-title {
@@ -363,9 +358,6 @@ body {
 }
 
 /* portfolio.html */
-.section-filter {
-  /* background-color: coral; */
-}
 
 .filter {
   display: flex;
@@ -373,6 +365,9 @@ body {
 }
 .filter-item + .filter-item {
   margin-left: 8px;
+}
+.filter-item {
+  border-radius: 4px;
 }
 
 .filter-button {
@@ -397,17 +392,33 @@ body {
 }
 
 .cards {
+  padding: 0;
+  margin: 0;
+
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .cards-item {
-  width: 370px;
-  margin: 15px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.cards-box {
+  margin: 0;
+  padding: 20px 24px 20px 24px;
+  background-color: var(--white-color);
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .cards-title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -415,6 +426,7 @@ body {
   letter-spacing: 0.06em;
 }
 .cards-text {
+  margin: 0;
   color: var(--text-color);
 
   font-size: 16px;
