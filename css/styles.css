@@ -43,6 +43,12 @@ body {
   padding-bottom: 94px;
 }
 
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* CONTAINER */
 
 .container {
@@ -52,6 +58,8 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  outline: 1px solid tomato;
 }
 
 .logo {
@@ -156,7 +164,7 @@ body {
 
 .btn {
   display: inline-block;
-  border: none;
+  border: transparent;
   border-radius: 4px;
 
   padding: 10px 32px;
@@ -180,11 +188,6 @@ body {
 /* works */
 .section-works {
   padding-top: 0;
-}
-.image {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .works {
