@@ -140,6 +140,8 @@ body {
 .feedback .link:focus {
   color: var(--accent-color);
 }
+
+/* HERO */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -160,19 +162,16 @@ body {
   text-transform: uppercase;
 }
 
-.btn {
+.hero-button {
   display: inline-block;
   border: transparent;
   border-radius: 4px;
 
   padding: 10px 32px;
-  min-width: 73px;
-}
+  min-width: 200px;
 
-.hero-button {
   color: var(--white-color);
   background-color: var(--accent-color);
-  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
@@ -374,6 +373,13 @@ body {
 }
 
 .filter-button {
+  display: inline-block;
+  border: transparent;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+  min-width: 73px;
+
   color: var(--primary-text-color);
   background-color: var(--bgc-color);
 
